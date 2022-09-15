@@ -1,6 +1,15 @@
+import { Link } from 'react-router-dom';
+
 function Header() {
     return (
-        <h1>Totally not being lazy</h1>
+        <>
+            <Link to='/whatever'>
+                <div>All People</div>
+            </Link>
+            <Link to='/people/6321f8e021d6bc3fe3f2f11e'>
+                <div>One Person</div>
+            </Link>
+        </>
     )
 }
 
