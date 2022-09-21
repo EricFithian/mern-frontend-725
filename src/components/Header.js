@@ -9,6 +9,9 @@ function Header() {
             <Link to='/people/6321f8e021d6bc3fe3f2f11e'>
                 <div>One Person</div>
             </Link>
+            <Link to='/breweries'>
+                <div>All Breweries</div>
+            </Link>
         </>
     )
 }
