@@ -3,7 +3,7 @@ import Brewery from '../components/Brewery';
 
 function Breweries(props) {
     const [breweries, setBreweries] = useState(null);
-    const URL = "http://localhost:4000/breweries"
+    const URL = "https://mern-backend-725.herokuapp.com/breweries"
     const [mySearch, setMySearch] = useState('')
 
     const getBreweries = async () => {
@@ -43,7 +43,7 @@ function Breweries(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const myBreweries = await fetch('http://localhost:4000/breweries?search=' + mySearch);
+            const myBreweries = await fetch('https://mern-backend-725.herokuapp.com/breweries?search=' + mySearch);
             const allBreweries = await myBreweries.json();
             setBreweries(allBreweries);
         } catch(err) {
