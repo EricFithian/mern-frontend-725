@@ -1,5 +1,5 @@
 function Brewery({brewery}) {
-    console.log(brewery);
+    // console.log(brewery);
     return (
         <>
             <h1>{brewery.name}</h1>
