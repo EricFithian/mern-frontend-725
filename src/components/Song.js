@@ -28,6 +28,7 @@ function Song({song}) {
     return (
         <>
             {mySong ? loaded() : <h1>Loading...</h1>}
+            <hr />
         </>
     )
 }

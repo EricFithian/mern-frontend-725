@@ -26,7 +26,7 @@ function Artists(props) {
             {artists ? artists.map((artist, idx) => {
                 return (
                     <div key={idx}>
-                        <h2>{artist.img}</h2>
+                        <img src={artist.img} alt={artist.name} />
                         <h3>{artist.bio}</h3>
                         <p>{artist.name}</p>
                         {artist.songs.map((song, idx) => {
