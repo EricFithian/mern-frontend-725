@@ -2,6 +2,7 @@ import { Routes, Route, Outlet } from "react-router-dom"
 import People from "../pages/People"
 import Show from "../pages/Show"
 import Breweries from "../pages/Breweries"
+import Artists from "../pages/Artists"
 
 export default function Main() {
     return (
@@ -11,6 +12,7 @@ export default function Main() {
                 <Route path='/whatever' element={<People />} />
                 <Route path='/people/:id' element={<Show />} />
                 <Route path='/breweries' element={<Breweries />} />
+                <Route path='/artists' element={<Artists />} />
             </Routes>
         </>
     )
